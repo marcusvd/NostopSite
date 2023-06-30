@@ -1,0 +1,51 @@
+.spacer-between-toolbar {
+    margin-bottom: 30px;
+}
+
+.icon-top-card {
+    /* background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg'); */
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    font-size: 50px;
+    color: rgb(8, 69, 8);
+    /* border-radius: 50px; */
+}
+
+.img-size {
+    width: 400px;
+    height: 250px;
+}
+
+.card-title-align {
+    margin-left: 15px;
+}
+
+.card-sub-title {
+    margin-left: 15px;
+}
+
+.mat-card-style {
+    width: 400px;
+    height: 520px;
+}
+
+.mat-card-style:hover .icon-top-card {
+    color: white;
+    background-color: darkgreen;
+}
+
+.mat-card-style:hover .card-sub-title {
+    color: white;
+    background-color: darkgreen;
+}
+
+.mat-card-style:hover {
+    background-color: darkgreen;
+    color: white;
+}
+
+.keep-reading-btn-card {
+    background-color: whitesmoke;
+    margin: 10px;
+}

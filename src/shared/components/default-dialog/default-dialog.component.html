@@ -1,0 +1,16 @@
+<div class="title" fxLayout="row" fxLayoutAlign="center center" mat-dialog-title>{{data.title}}</div>
+<div class="dialog-content" mat-dialog-content>
+    <div *ngFor="let item of data.body; let i = index">
+
+        <div *ngIf="i % 2 === 0">
+            <b class="sub-title">{{item}}</b>
+        </div>
+        <div *ngIf="i % 2 != 0">
+            <p>{{item}}</p>
+        </div>
+
+    </div>
+</div>
+<mat-dialog-actions align="center">
+    <button class="close-btn" mat-button mat-dialog-close>Fechar</button>
+</mat-dialog-actions>

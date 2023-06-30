@@ -1,0 +1,138 @@
+<div class="spacer-between-toolbar"></div>
+<mat-grid-list (window:resize)="screen()" [cols]="cardsCols" [rowHeight]="cardsRowHeight">
+
+    <mat-grid-tile rowspan="5">
+        <span hover-class="mat-elevation-z10">
+      <mat-card class="mat-card-style">
+        <mat-card-header>
+          <div mat-card-avatar>
+            <mat-icon fontSet="material-icons-outlined" class="icon-top-card">person</mat-icon>
+          </div>
+          <mat-card-title class="card-title-align">Suporte técnico</mat-card-title>
+          <mat-card-subtitle class="card-sub-title">Altamente qualificado</mat-card-subtitle>
+        </mat-card-header>
+        <img class="img-size" mat-card-image src="../assets/support2.jpg" alt="Photo of a Shiba Inu">
+        <mat-card-content>
+          <p>{{supportCardText}}</p>
+        </mat-card-content>
+        <mat-card-actions fxLayout="row" fxLayoutAlign="center center">
+          <button class="keep-reading-btn-card" mat-button (click)="openDialog('SUPORTE',supportTexts)">Continuar
+            lendo</button>
+        </mat-card-actions>
+
+      </mat-card>
+    </span>
+    </mat-grid-tile>
+
+    <mat-grid-tile rowspan="5">
+        <span hover-class="mat-elevation-z10">
+      <mat-card class="mat-card-style">
+        <mat-card-header>
+          <div mat-card-avatar>
+            <mat-icon fontSet="material-icons-outlined" class="icon-top-card">vpn_lock</mat-icon>
+          </div>
+          <mat-card-title class="card-title-align">Vpn</mat-card-title>
+          <mat-card-subtitle class="card-sub-title">Virtual Private Network </mat-card-subtitle>
+        </mat-card-header>
+        <img class="img-size" mat-card-image src="../assets/vpn.jpg" alt="Photo of a Shiba Inu">
+        <mat-card-content>
+          <p>{{vpnCardText}}</p>
+        </mat-card-content>
+        <mat-card-actions fxLayout="row" fxLayoutAlign="center center">
+          <button class="keep-reading-btn-card" mat-button (click)="openDialog('VPN',vpnTexts)">Continuar lendo</button>
+        </mat-card-actions>
+      </mat-card>
+    </span>
+    </mat-grid-tile>
+
+    <mat-grid-tile rowspan="5">
+        <span hover-class="mat-elevation-z10">
+      <mat-card class="mat-card-style">
+        <mat-card-header>
+          <div mat-card-avatar>
+            <mat-icon fontSet="material-icons-outlined" class="icon-top-card">computer</mat-icon>
+          </div>
+          <mat-card-title class="card-title-align">Servidores</mat-card-title>
+          <mat-card-subtitle class="card-sub-title">Rede profissional</mat-card-subtitle>
+        </mat-card-header>
+        <img class="img-size" mat-card-image src="../assets/servers.jpg" alt="Photo of a Shiba Inu">
+        <mat-card-content>
+          <p>
+            {{serversCardText}}
+          </p>
+        </mat-card-content>
+        <mat-card-actions fxLayout="row" fxLayoutAlign="center center">
+          <button class="keep-reading-btn-card" mat-button (click)="openDialog('SERVIDORES',serversTexts)">Continuar
+            lendo</button>
+        </mat-card-actions>
+      </mat-card>
+    </span>
+    </mat-grid-tile>
+
+    <mat-grid-tile rowspan="5">
+        <span hover-class="mat-elevation-z10">
+      <mat-card class="mat-card-style">
+        <mat-card-header>
+          <div mat-card-avatar>
+            <mat-icon fontSet="material-icons-outlined" class="icon-top-card">backup</mat-icon>
+          </div>
+          <mat-card-title class="card-title-align">Nuvem</mat-card-title>
+          <mat-card-subtitle class="card-sub-title">Segurança</mat-card-subtitle>
+        </mat-card-header>
+        <img class="img-size" mat-card-image src="../assets/cloudcomputer.png" alt="Photo of a Shiba Inu">
+        <mat-card-content>
+          <p>{{cloudCardBackupText}}</p>
+        </mat-card-content>
+        <mat-card-actions fxLayout="row" fxLayoutAlign="center center">
+          <button class="keep-reading-btn-card" mat-button (click)="openDialog('NUVEM',cloudBackupTexts)">Continuar
+            lendo</button>
+        </mat-card-actions>
+      </mat-card>
+    </span>
+    </mat-grid-tile>
+
+    <mat-grid-tile rowspan="5">
+        <span hover-class="mat-elevation-z10">
+      <mat-card class="mat-card-style">
+        <mat-card-header>
+          <div mat-card-avatar>
+            <mat-icon fontSet="material-icons-outlined" class="icon-top-card">save</mat-icon>
+          </div>
+          <mat-card-title class="card-title-align">Backup Local</mat-card-title>
+          <mat-card-subtitle class="card-sub-title">Garantia de segurança</mat-card-subtitle>
+        </mat-card-header>
+        <img class="img-size" mat-card-image src="../assets/backup.png" alt="Photo of a Shiba Inu">
+        <mat-card-content>
+          <p>{{localBackupCardText}}</p>
+        </mat-card-content>
+        <mat-card-actions fxLayout="row" fxLayoutAlign="center center">
+          <button class="keep-reading-btn-card" mat-button
+            (click)="openDialog('BACKUP LOCAL',localBackupTexts)">Continuar lendo</button>
+        </mat-card-actions>
+      </mat-card>
+    </span>
+    </mat-grid-tile>
+
+    <mat-grid-tile rowspan="5">
+        <span hover-class="mat-elevation-z10">
+      <mat-card class="mat-card-style">
+        <mat-card-header>
+          <div mat-card-avatar>
+            <mat-icon fontSet="material-icons-outlined" class="icon-top-card">network_locked</mat-icon>
+          </div>
+          <mat-card-title class="card-title-align">Rede Cabeada</mat-card-title>
+          <mat-card-subtitle class="card-sub-title">Mais velocidade</mat-card-subtitle>
+        </mat-card-header>
+        <img class="img-size" mat-card-image src="../assets/wired-network.jpg" alt="Photo of a Shiba Inu">
+        <mat-card-content>
+          <p>{{wiredNetworkCardText}}</p>
+        </mat-card-content>
+        <mat-card-actions fxLayout="row" fxLayoutAlign="center center">
+          <button class="keep-reading-btn-card" mat-button
+            (click)="openDialog('CABEAMENTO',wiredNetworkTexts)">Continuar lendo</button>
+        </mat-card-actions>
+      </mat-card>
+    </span>
+    </mat-grid-tile>
+
+</mat-grid-list>

@@ -1,0 +1,23 @@
+.title {
+    font-size: 50px;
+    padding: 30px;
+    background-color: darkgreen;
+    color: white;
+}
+
+.sub-title {
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.dialog-content {
+    padding: 50px;
+}
+
+.close-btn {
+    background-color: rgb(31, 73, 31);
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    color: white;
+}

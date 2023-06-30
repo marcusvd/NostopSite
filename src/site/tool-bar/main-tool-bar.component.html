@@ -1,0 +1,40 @@
+<mat-toolbar class="mat-toolbar-style" *ngIf="!showHidden" fxLayout="row" (window:resize)="screen()">
+    <div fxLayout="column">
+        <div class="space-top"></div>
+        <span class="services-link" [routerLink]="['/provided-services']">
+        <div class="div-box-icons" fxLayout="row">
+            <mat-icon class="icon-settings" fontSet="material-icons-outlined">settings</mat-icon>
+        </div>
+        <div class="div-box-text-icon-services" fxLayout="row">
+            <p class="text-settings">Serviços</p>
+        </div>
+      </span>
+        <br>
+    </div>
+    <div fxFlex="30"></div>
+    <div fxLayout="row">
+        <img class="logo-padding" src="../assets/cropped_image-removebg-preview.png" alt="">
+    </div>
+</mat-toolbar>
+
+<div *ngIf="showHidden">
+    <mat-toolbar class="mat-toolbar-style" fxLayout="column" (window:resize)="screen()">
+        <div class="space-top"></div>
+        <div fxLayout="row" fxLayoutAlign="start start">
+            <span class="services-link" [routerLink]="['/provided-services']">
+      <div class="div-box-icons" fxLayout="row">
+        <mat-icon class="icon-settings" fontSet="material-icons-outlined">settings</mat-icon>
+      </div>
+      <div class="div-box-text-icon-services" fxLayout="row">
+        <p class="text-settings">Serviços</p>
+      </div>
+    </span>
+        </div>
+        <div class="logo-space"></div>
+        <div fxLayout=" row ">
+            <img src="../assets/cropped_image-removebg-preview.png " alt=" ">
+        </div>
+    </mat-toolbar>
+    <div class="space-bottom"></div>
+
+</div>
